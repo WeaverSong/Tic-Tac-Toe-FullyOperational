@@ -1,0 +1,66 @@
+/* The entire board */
+#board {
+    padding: 3em;
+    text-align: center;
+}
+
+/* The top text */
+#TitleText {
+    text-align: center;
+}
+
+/* Every cell */
+.row > div {
+    height: 100px;
+    width: 100px;
+    float: left;
+    text-align: center;
+    font-size: 85px;
+}
+
+/* Every cell when hoevered over */
+.row > div:not(.unavailable):hover {
+    cursor: cell;
+    background-color: lightgreen;
+}
+
+/* Each row */
+.row {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Adding the correct border pieces so it all lines up, no matter how big the board is */
+.right {
+    border-right: black 1.5px solid;
+}
+.left {
+    border-left: black 1.5px solid;
+}
+.bottom {
+    border-bottom: black 1.5px solid;
+}
+.top {
+    border-top: black 1.5px solid;
+}
+
+/* Grays out cells that can't be clicked on */
+.unavailable:hover {
+    cursor: cell;
+    background-color: gray;
+}
+
+/* The styling for the new game buttons */
+.GameButton {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    font-size: large;
+    padding: 10px 15px;
+}
+
+.padding {
+    padding-top: 10px;
+    clear: both;
+}
