@@ -16,6 +16,7 @@
     float: left;
     text-align: center;
     font-size: 85px;
+    user-select: none;
 }
 
 /* Every cell when hoevered over */
